@@ -1,0 +1,30 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+header{
+	background: red;
+	height: 200px;
+	clear: both;
+}
+footer{
+	background: green;
+	height: 200px;
+	clear: both;
+}
+.col{
+	background: blue;
+	height: 400px;
+	@include span-columns(3,12);
+	@include nth-omega(4n);
+}
+
